@@ -35,7 +35,8 @@ jobs:
         with:
           toolchain-type: base
 
-      - uses: s-u/R-actions/tinytex@v1
+      - if: ${{ runner.os != 'Windows' }} 
+        uses: s-u/R-actions/tinytex@v1
         with:
           flavor: TinyTeX-1
 
