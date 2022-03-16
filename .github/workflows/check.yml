@@ -37,7 +37,7 @@ jobs:
 
       - uses: s-u/R-actions/tinytex@v1
         with:
-	        flavor: TinyTeX-1
+          flavor: TinyTeX-1
 
       - uses: s-u/R-actions/pkg-check@v1
         with:
